@@ -10,6 +10,8 @@ To install and set up the Realtek Semiconductor Corp. RTL8188FTV 802.11b/g/n 1T1
 First, install the necessary packages:
 
 	sudo apt-get update
+
+ ___
 	sudo apt-get install build-essential git dkms linux-headers-$(uname -r)
 
 First, install the necessary packages:
@@ -19,8 +21,12 @@ First, install the necessary packages:
 Then, build and install the driver:
 
 	sudo dkms add ./rtl8188fu
-	sudo dkms build rtl8188fu/1.0
-	sudo dkms install rtl8188fu/1.0
+	
+ ____
+ 	sudo dkms build rtl8188fu/1.0
+	
+ -----
+ 	sudo dkms install rtl8188fu/1.0
 
 Copy the firmware file to the correct location:
 
@@ -31,8 +37,8 @@ Finally, load the driver module:
 
 
 	sudo modprobe rtl8xxxu
-	
-	or
+------
+or
 	
 	sudo modprobe rtl8188fu
 	
@@ -45,7 +51,7 @@ If you still encounter issues, you can try to blacklist the conflicting drivers 
 	sudo modprobe rtl8188fu
 	
 	
-	or
+or
 	
 	
 	sudo echo "blacklist rtl8192cu" >> /etc/modprobe.d/blacklist.conf

@@ -30,7 +30,7 @@ Then, build and install the driver:
 
 Copy the firmware file to the correct location:
 
-sudo cp ./rtl8188fu/firmware/rtl8188fufw.bin /lib/firmware/rtlwifi/
+	sudo cp ./rtl8188fu/firmware/rtl8188fufw.bin /lib/firmware/rtlwifi/
 
 
 Finally, load the driver module:

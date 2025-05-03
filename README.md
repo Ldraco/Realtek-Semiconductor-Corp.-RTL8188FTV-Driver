@@ -22,10 +22,10 @@ Then, build and install the driver:
 
 	sudo dkms add ./rtl8188fu
 	
- ____
+ ----
  	sudo dkms build rtl8188fu/1.0
 	
- -----
+ ----
  	sudo dkms install rtl8188fu/1.0
 
 Copy the firmware file to the correct location:
@@ -37,7 +37,7 @@ Finally, load the driver module:
 
 
 	sudo modprobe rtl8xxxu
-------
+
 or
 	
 	sudo modprobe rtl8188fu
